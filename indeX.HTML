@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/5b5d2b9aa4.js" crossorigin="anonymous"></script>
+    <title>registration form</title>
+</head>
+<body>
+ <div class="form_container">
+
+  <!-- Register Form -->
+  <form id="registeredForm">
+    <h2>Register</h2>
+
+    <input type="text"  id="name" placeholder="Enter name" />
+    <input type="email" id="email" placeholder="Enter email" />
+<div class="password-container">
+  <input type="password" id="password" placeholder="Enter password" />
+  <i id="togglePassword" class="fa-solid fa-eye"></i>
+</div>
+
+<div class="password-container">
+   <input type="password" id="confirm_password" placeholder="Confirm password">
+<i id="toggleConfirmPassword" class="fa-solid fa-eye"></i>
+
+</div>
+
+
+    <button id="registerBtn" type="submit">Submit</button>
+
+    <p>
+      Already have account?
+      <span id="showLogin">Login</span>
+    </p>
+   
+  </form>
+
+  <!-- Login Form -->
+  <form id="loginForm">
+    <h2>Login</h2>
+
+    <div class="password-containerr ">
+
+      <input type="email"placeholder="Enter email"  id="login_email"/>
+      <input type="password" id="login_password" placeholder="Enter password" />
+  <i id="loginpassword" class="fa-solid fa-eye"></i>
+    </div>
+    <button id="loginBtn" type="submit">Submit</button>
+
+    <p>
+      New user?
+      <span id="showRegister">Register</span>
+     
+    
+    </p>
+    
+</form>
+<p id="msg"></p> 
+
+</div>
+
+
+
+
+<!-- <p id="error"></p> -->
+
+</body>
+<script src="./main.js"></script>
+</html>
